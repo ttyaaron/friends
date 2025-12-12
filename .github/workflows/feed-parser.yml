@@ -14,12 +14,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Create v2 directory
+        run: mkdir -p v2
       - name: Run Feed Post Parser
         uses: xaoxuu/feed-posts-parser@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          data_path: '/v2/data.json'
+          data_path: 'v2/data.json'
           posts_count: 3
           date_format: 'YYYY-MM-DD HH:mm'
       # 重新生成一下JSON
@@ -29,7 +31,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           data_version: 'v2'
-          data_path: '/v2/data.json'
+          data_path: 'v2/data.json'
           sort: 'posts-desc' # 'created-desc'/'created-asc'/'updated-desc'/'updated-asc'
           exclude_issue_with_labels: '审核中, 缺少互动, 缺少文章, 风险网站' # 具有哪些标签的issue不生成到JSON中
           hide_labels: '白名单' # 这些标签不显示在前端页面
