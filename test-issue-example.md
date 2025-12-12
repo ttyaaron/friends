@@ -2,17 +2,17 @@
 
 Copy this content when creating a test issue on GitHub:
 
-```yaml
----
-title: xaoxuu's blog
-url: https://xaoxuu.com
-avatar: https://github.com/xaoxuu.png
-description: 一个测试友链
-keywords:
-  - 博客
-  - 技术
-feed: https://xaoxuu.com/atom.xml
----
+**IMPORTANT: Use JSON format, not YAML!**
+
+```json
+{
+  "title": "xaoxuu's blog",
+  "url": "https://xaoxuu.com/",
+  "description": "一个测试友链",
+  "icon": "https://github.com/xaoxuu.png",
+  "snapshot": "",
+  "feed": "https://xaoxuu.com/atom.xml"
+}
 ```
 
 ## Steps to test:
