@@ -11,17 +11,15 @@ assignees: ''
 删除示例内容，填写你自己的信息。
 -->
 
-```yaml
----
-title: 你的网站名称
-url: https://你的网站地址.com
-avatar: https://你的头像地址.png
-description: 简短的网站描述
-keywords:
-  - 关键词1
-  - 关键词2
-feed: https://你的网站地址.com/atom.xml
----
+```json
+{
+  "title": "你的网站名称",
+  "url": "https://你的网站地址.com/",
+  "description": "简短的网站描述",
+  "icon": "https://你的头像地址.png",
+  "snapshot": "",
+  "feed": "https://你的网站地址.com/atom.xml"
+}
 ```
 
 ## 补充说明
