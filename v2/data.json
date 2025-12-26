@@ -1,0 +1,27 @@
+{
+  "version": "v2",
+  "content": [
+    {
+      "title": "Cauchy",
+      "url": "https://cauchyoooo.github.io/",
+      "description": "Cauchy",
+      "icon": "https://res.cloudinary.com/dekmp7ltk/image/upload/v1735875656/avatar_zdetzl.jpg",
+      "snapshot": "",
+      "feed": "https://cauchyoooo.github.io/atom.xml",
+      "posts": [],
+      "issue_number": 2,
+      "labels": []
+    },
+    {
+      "title": "微光的狼窝",
+      "url": "https://starcried.github.io/",
+      "description": "微光的狼窝",
+      "icon": "https://res.cloudinary.com/dekmp7ltk/image/upload/v1735675332/bbbec7ba-b891-44b6-b8bd-9ff22b402911_ujxg8r.png",
+      "snapshot": "",
+      "feed": "https://starcried.github.io/atom.xml",
+      "posts": [],
+      "issue_number": 1,
+      "labels": []
+    }
+  ]
+}
