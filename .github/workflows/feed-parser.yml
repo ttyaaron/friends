@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: '0 21 * * *' # Runs daily at 21:00 UTC (东八区凌晨 05:00)
 
+concurrency:
+  group: friends-output
+  cancel-in-progress: false
+
 jobs:
   feed-parser:
     runs-on: ubuntu-latest
